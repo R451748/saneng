@@ -1,0 +1,10 @@
+source: https://www.kaggle.com/competitions/denoising-dirty-documents
+
+Contains: 	1. Noisy train images
+		2. Noisy test images
+		3. Cleaned images
+
+Counts:
+1. Noisy train images: 72
+2. Noisy test images: 72
+3. Cleaned images: 144
