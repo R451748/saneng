@@ -1,0 +1,4 @@
+source: https://www.kaggle.com/code/aiswaryaramachandran/english-to-hindi-neural-machine-translation/data
+
+English-Hindi Translations along with the source from where the sentences were selected
+Total count=127607

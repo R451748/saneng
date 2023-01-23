@@ -1,0 +1,4 @@
+Sanskrit-English translations
+Gathered from google translate manually
+and processed into required format
+Total count 12900
