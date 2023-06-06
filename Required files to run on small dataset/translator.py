@@ -242,6 +242,12 @@ def get_translation(sentence):
   decoded_sentence = decode_sequence(input_seq,n)
   return decoded_sentence[1:-5]
 
+import googletrans  
+from googletrans import Translator
+translator = Translator()
+def translater(text):
+  english_translated_text = translator.translate(text, src='auto', dest= 'en')
+  return english_translated_text.text
 
 ######################################################################################################################################################################
 #UI
@@ -261,7 +267,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('2.jpg')
+add_bg_from_local('3.jpg')
 
 option = st.selectbox('Select?',('Image', 'Text'),label_visibility="collapsed")
 
@@ -273,8 +279,11 @@ if option == "Image":
         txt=preprocess(txt)
         print(txt)
         try:
-            out=get_translation(txt)
+            out=translater(txt)
         except:
+         try:
+            out=get_translation(txt)
+       except:
             out='Couldn\'t find an appropriate translation'
         finally:
             print(out)
