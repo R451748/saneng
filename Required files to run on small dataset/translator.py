@@ -242,12 +242,6 @@ def get_translation(sentence):
   decoded_sentence = decode_sequence(input_seq,n)
   return decoded_sentence[1:-5]
 
-import googletrans  
-from googletrans import Translator
-translator = Translator()
-def translater(text):
-  english_translated_text = translator.translate(text, src='auto', dest= 'en')
-  return english_translated_text.text
 
 ######################################################################################################################################################################
 #UI
